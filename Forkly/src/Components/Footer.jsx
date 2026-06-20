@@ -1,7 +1,13 @@
 export default function Footer(){
     return(
         <>
-          <h1>This is a footer part</h1>
+          <Footer className="flex flex-col">
+            <div className="flex items-center">
+                <p>Forkly</p>
+                <p>We Deliver the best.</p>
+            </div>
+
+          </Footer>
         </>
     )
 }
