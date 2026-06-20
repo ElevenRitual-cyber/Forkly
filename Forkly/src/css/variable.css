@@ -149,7 +149,7 @@
 .card {
     background: white;
     border-radius: 12px;
-    padding: 1rem;
+    padding: .21rem;
     box-shadow: 0 4px 12px var(--shadow);
     transition: 0.3s;
 }

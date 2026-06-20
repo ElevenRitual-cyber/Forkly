@@ -11,6 +11,7 @@ export default function Footer() {
         <div className="flex items-center flex-col">
           <p className="text-4xl">Forkly</p>
           <p>We Deliver the best.</p>
+          <p>© 2025 Forkly Limited</p>
         </div>
         <div className="flex flex-col gap-8">
           <p className="text-2xl">Company</p>
@@ -23,7 +24,6 @@ export default function Footer() {
           <Link to="#" element={""}>Termns and Conditions</Link>
           <Link to="#" element={""}>Cookie Policy</Link>
           <Link to="#" element={""}>Privacy Policy</Link>
-          <p>All Copy Rights</p>
         </div>
         <div className="flex flex-col gap-8">
           <p className="text-2xl">Support</p>
