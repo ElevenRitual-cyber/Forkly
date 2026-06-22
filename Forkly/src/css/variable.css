@@ -27,7 +27,7 @@
     --shadow: rgba(0, 0, 0, 0.12);
 
     /* Footer */
-    --footer-bg: #EFA0A4;
+    --footer-bg: #ffb1b5;
 }
 
 
@@ -97,7 +97,8 @@
     color: black;
     border: none;
     border-radius: 999px;
-    padding: 5px 10px;
+    padding:  clamp(4px, 1vw, 8px)
+         clamp(8px, 2vw, 16px);;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -149,7 +150,7 @@
 .card {
     background: white;
     border-radius: 12px;
-    padding: .21rem;
+    /* padding: .21rem; */
     box-shadow: 0 4px 12px var(--shadow);
     transition: 0.3s;
 }

@@ -1,7 +1,19 @@
 import tb from "../assets/tb.png";
 import "../css/home.css";
 import CategoryCard from "./CategoryCard";
+import RestaurantCard from "./RestaurantCard";
 import Slider from "./Slider";
+import seafood from "../assets/Seafood.png";
+import "../css/variable.css";
+
+const restaurant = {
+    name: "Fine Dine",
+    ratings: 4.5,
+    estTime: "23 mints",
+    type: "veg",
+    imgs: seafood
+
+}
 export default function Home() {
     return (
         <>
@@ -40,8 +52,42 @@ export default function Home() {
             <div className="slider">
                 <p className="text-5xl">Thinking of Something delicious?</p>
                 <Slider />
-                
-                
+                <div className="line"></div>
+
+            </div>
+            <div>
+                <p className=" slider restaurant-card">
+                    <p className="text-4xl">Leading Restaurants</p>
+                    <div className="container-theme 
+                    grid grid-cols-1 
+                    sm:grid-cols-2 
+                    md:grid-cols-2 lg:grid-cols-4 gap-20
+                    bg-primary
+                    p-10 rounded">
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                    </div>
+
+                </p>
+            </div>
+            <div>
+                <p className=" slider restaurant-card">
+                    <p className="text-4xl">Leading Restaurants</p>
+                    <div className="container-theme 
+                    grid grid-cols-1 
+                    sm:grid-cols-2 
+                    md:grid-cols-2 lg:grid-cols-4 gap-20
+                    bg-primary
+                    p-10 rounded">
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                        <RestaurantCard restaurant={restaurant} />
+                    </div>
+
+                </p>
             </div>
         </>
     )

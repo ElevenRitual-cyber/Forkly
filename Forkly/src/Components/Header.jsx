@@ -1,9 +1,24 @@
 import { Link, NavLink } from "react-router-dom";
 import "../css/variable.css";
+import { useState } from "react";
+import AuthDrawer from "./AuthDrawer";
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [mode, setMode] = useState("signup");
     return (
         <>
-            <header className=" flex justify-between shadow-md items-center p-10">
+            <header className=" flex
+    flex-col
+    sm:flex-row
+    items-center
+    justify-between
+    gap-4
+    px-4
+    sm:px-6
+    lg:px-10
+    py-4
+    shadow-md
+    w-full">
                 <div>
                     <p className="text-2xl text-brand">Forkly</p>
                     <p className="text-md">We deliver the best</p>
@@ -13,17 +28,17 @@ export default function Header() {
                         type="text"
                         placeholder="Search here..."
                         className="
+                        sm:w-64
+                        md:w-80
+                        lg:w-[400px]
                         bg-brand-light
-                        w-100
                         rounded-lg
+                        px-4
+                        py-2
                         outline-none
-                        border-none
-                        focus:outline-none
                         focus:ring-0
                         text-center
                         placeholder:text-center
-                        px-4
-                        py-2    
                     "
                     />
                 </div>
@@ -61,7 +76,19 @@ export default function Header() {
                         Offers
                     </NavLink>
                     <Link to="#">Login</Link>
-                    <Link to="#" className="btn-primary">Register Now</Link>
+                    <button
+                        onClick={() => setIsOpen(true)}
+                        className="px-6 py-3 bg-red-500 text-white rounded-lg"
+                    >
+                        Sign Up
+                    </button>
+
+                    <AuthDrawer
+                        isOpen={isOpen}
+                        mode={mode}
+                        onClose={() => setIsOpen(false)}
+                        switchMode={setMode}
+                    />
 
 
                 </div>
