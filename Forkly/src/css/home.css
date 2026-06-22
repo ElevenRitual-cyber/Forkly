@@ -1,3 +1,9 @@
 .hero-section{
     padding: 3rem;
 }
+.slider{
+    padding: 3rem;
+}
+.slider >p{
+    margin: 13px;
+}

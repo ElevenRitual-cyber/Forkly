@@ -10,7 +10,7 @@ export default function Slider() {
     const nextRef = useRef(null);
 
     return (
-        <div className="relative w-full">
+        <div className="relative w-full px-10">
 
             <button
                 ref={prevRef}
@@ -29,7 +29,7 @@ export default function Slider() {
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={10}
-                slidesPerView={5}
+                slidesPerView={4}
                 onBeforeInit={(swiper) => {
                     swiper.params.navigation.prevEl = prevRef.current;
                     swiper.params.navigation.nextEl = nextRef.current;
@@ -37,6 +37,23 @@ export default function Slider() {
                 navigation={{
                     prevEl: prevRef.current,
                     nextEl: nextRef.current,
+                }}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                    1280: {
+                        slidesPerView: 5,
+                    },
                 }}
             >
                 <SwiperSlide><CategoryCard /></SwiperSlide>

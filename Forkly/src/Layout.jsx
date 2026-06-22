@@ -7,7 +7,7 @@ export default function Layout() {
         <>
             <Header />
 
-            <main style={{height:"100vh"}}>
+            <main >
                 <Outlet />
             </main>
 

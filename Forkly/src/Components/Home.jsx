@@ -37,9 +37,10 @@ export default function Home() {
                 </div>
             </div>
             {/* Here we will add the hero-cards */}
-            <div>
+            <div className="slider">
                 <p className="text-5xl">Thinking of Something delicious?</p>
                 <Slider />
+                
                 
             </div>
         </>
