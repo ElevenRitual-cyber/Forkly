@@ -5,6 +5,7 @@ import RestaurantCard from "./RestaurantCard";
 import Slider from "./Slider";
 import seafood from "../assets/Seafood.png";
 import "../css/variable.css";
+import FilterForm from "./FiltersForm";
 
 const restaurant = {
     name: "Fine Dine",
@@ -22,15 +23,15 @@ export default function Home() {
           flex
           justify-center
           items-center
-          px-10
+          px-5
           
          
           ">
                 <div className="flex flex-col w-141">
-                    <p className="text-5xl">
+                    <p className="text-4xl">
                         Swift Delivery, Trusted Service
                     </p>
-                    <p className="text-5xl">
+                    <p className="text-4xl">
                         <span className="font-bold text-5xl">Experience </span>
                         the Best !
                     </p>
@@ -45,7 +46,7 @@ export default function Home() {
                 {/* put the image here */}
                 <div className="flex-1 x flex justify-end">
                     <img src={tb} alt=""
-                        className="w-full h-80 object-cover self-end " />
+                        className="w-172 h-auto object-contain " />
                 </div>
             </div>
             {/* Here we will add the hero-cards */}
@@ -86,7 +87,7 @@ export default function Home() {
                         <RestaurantCard restaurant={restaurant} />
                         <RestaurantCard restaurant={restaurant} />
                     </div>
-
+                    
                 </p>
             </div>
         </>

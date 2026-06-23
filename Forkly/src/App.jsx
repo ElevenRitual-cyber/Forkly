@@ -2,6 +2,8 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './Components/Home';
 import Food from './Components/Food';
+import FilterForm from './Components/FiltersForm';
+import SearchPage from './Components/SearchPage';
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="food" element={<Food />} />
                 <Route path="restaurants" element={<Food />} />
+                <Route path='search' element={<SearchPage />} />
             </Route>
         </Routes>
     </>
