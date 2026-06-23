@@ -4,6 +4,8 @@ import Home from './Components/Home';
 import Food from './Components/Food';
 import FilterForm from './Components/FiltersForm';
 import SearchPage from './Components/SearchPage';
+import Cart from './Components/Cart';
+import CartPage from './Components/CartPage';
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
                 <Route path="food" element={<Food />} />
                 <Route path="restaurants" element={<Food />} />
                 <Route path='search' element={<SearchPage />} />
+                <Route path='cart' element={<CartPage />} />
                 
             </Route>
         </Routes>

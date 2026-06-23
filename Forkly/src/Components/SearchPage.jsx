@@ -16,7 +16,7 @@ export default function SearchPage() {
             <div className="flex gap-6 p-6 justify-center p-20">
 
                 {/* Sidebar */}
-                <aside className="w-80 flex-shrink-0">
+                <aside className="hidden lg:block w-80 flex-shrink-0">
                     <FilterForm />
                 </aside>
 

@@ -154,7 +154,13 @@
     box-shadow: 0 4px 12px var(--shadow);
     transition: 0.3s;
 }
-
+.checkout {
+    background: white;
+    border-radius: 12px;
+    /* padding: .21rem; */
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: 0.3s;
+}
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
