@@ -15,6 +15,7 @@ function App() {
                 <Route path="food" element={<Food />} />
                 <Route path="restaurants" element={<Food />} />
                 <Route path='search' element={<SearchPage />} />
+                
             </Route>
         </Routes>
     </>
