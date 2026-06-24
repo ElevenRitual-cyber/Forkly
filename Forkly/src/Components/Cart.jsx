@@ -8,14 +8,14 @@ export default function Cart() {
     return (
         <div className="flex flex-col ">
             {/* make two rows */}
-            <div>
+            {/* <div>
                 <p className="text-3xl font-semibold">Your Cart</p>
                 <p>3 Item</p>
 
-            </div>
+            </div> */}
             <div className="flex items-center ">
                 {/* add three divs here  */}
-                <div className="card-image w-50 p-4">
+                <div className="card-image w-90 p-4">
                     <img src={tb} alt="Item" className="rounded" />
                 </div>
                 <div className="flex flex-col gap-3 justify-center">
@@ -93,12 +93,12 @@ function QuantitySelector() {
 export function Bill() {
     return (
         <>
-            <div className=" flex flex-col checkout
+            <div className=" flex flex-col 
                             w-full
                             md:w-1/2
                             lg:w-1/4 items-center">
                 
-                    <p className="text-2xl self-start p-3">Bill Details</p>
+                    <p className="text-2xl self-start p-3 w-100">Bill Details</p>
                 
                 
                 <div className=" flex flex-col w-90 gap-3 p-5">
