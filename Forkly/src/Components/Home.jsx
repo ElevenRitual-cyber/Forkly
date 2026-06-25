@@ -6,6 +6,7 @@ import Slider from "./Slider";
 import seafood from "../assets/Seafood.png";
 import "../css/variable.css";
 import FilterForm from "./FiltersForm";
+import Testimonial from "./Testimonial";
 
 const restaurant = {
     name: "Fine Dine",
@@ -90,6 +91,7 @@ export default function Home() {
                     
                 </p>
             </div>
+            <div><Testimonial /></div>
         </>
     )
 }
